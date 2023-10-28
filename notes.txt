@@ -37,6 +37,24 @@ redux store.
 4. allows state to be updated via dispatch(action())
 5. register listner via subscribe(listner)
 6. handles unregistering of listners via the function returned by subscribe(listner)
+
+
+Middleware
+
+1. is the suggested way to extend Redux with custom functionality
+2. Provides a third-party extension point between dispatching an action, and the moment it reaches the reducer
+3. Use middleware for logging, crash reporting, performing asynchronous tasks etc
+
+
+if you want to use a middlewarev first you need to import it
+
+then you need to pass it as an argument to createStore method
+
+example 
+// const applyMiddleWare = redux.applyMiddleware
+// const store = createStore(reducer,applyMiddleWare(logger)) 
+
+
    
  
 
