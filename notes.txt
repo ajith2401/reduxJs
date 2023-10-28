@@ -28,6 +28,15 @@ app can update the state in thr store by dispatching an action.
 depedns upon actin the reducer will change the state of the sotre
 
 actions are the only the app can intract with store. actions are plain js objects.
+
+redux store.
+
+1. one store for the entire app.
+2. holds application state.
+3. allows access to state (via get state)
+4. allows state to be updated via dispatch(action())
+5. register listner via subscribe(listner)
+6. handles unregistering of listners via the function returned by subscribe(listner)
    
  
 
