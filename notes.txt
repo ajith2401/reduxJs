@@ -1,0 +1,36 @@
+redux is a state management library.
+we can manage and maintain state in a predictable way.
+redux toolkit is a library for efficient redux development.
+react-redux is a library that provides bindings to use react and redux together in an application. 
+we can use redux when we have large amount of application states that are needed in many places in the app.
+when the app state is updated frquently over time
+when the logic to update the state may be complex
+The app has a medium or large-sized codebase, and might be worked on by many people 
+
+
+three core concepts in redux
+
+1. store -  holds state of the application
+2. action -  describes what happened
+3. reducer - ties the sotre and actions together
+
+three principbes
+
+1. the global state of your app is stored as an object inside a single store.(state is read only)
+2. the only way to change the state i to dispatch an action, an object that discribes what happened
+3. to specify how the state tree is updated based on actions, you wirte pure reducers (pure functions)
+
+
+redux store => app => action = > reducer => redux store
+
+the app cannot update the state of the store directly.
+app can update the state in thr store by dispatching an action.
+depedns upon actin the reducer will change the state of the sotre
+
+actions are the only the app can intract with store. actions are plain js objects.
+   
+ 
+
+
+
+  
